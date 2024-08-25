@@ -1,0 +1,5 @@
+#Predict Depth Images
+sensor_msgs/Image image
+vpp_interfaces/Result result
+---
+sensor_msgs/PointCloud2 object_segment

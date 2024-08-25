@@ -1,0 +1,200 @@
+[0.263s] Invoking command in '/home/alpha/Research/voxblox/build/vpp_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/zed_showvideo:/home/alpha/Research/voxblox/install/camera:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --build /home/alpha/Research/voxblox/build/vpp_interfaces -- -j22 -l22
+[0.306s] [  2%] Built target vpp_interfaces__cpp
+[0.308s] [ 12%] Built target vpp_interfaces__rosidl_generator_c
+[0.312s] [ 12%] Built target ament_cmake_python_copy_vpp_interfaces
+[0.321s] [ 23%] Built target vpp_interfaces__rosidl_typesupport_introspection_cpp
+[0.325s] [ 34%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_c
+[0.327s] [ 44%] Built target vpp_interfaces__rosidl_typesupport_cpp
+[0.331s] [ 55%] Built target vpp_interfaces__rosidl_typesupport_c
+[0.333s] [ 65%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.334s] [ 76%] Built target vpp_interfaces__rosidl_typesupport_introspection_c
+[0.345s] [ 76%] Built target vpp_interfaces
+[0.358s] [ 78%] Built target vpp_interfaces__py
+[0.376s] [ 87%] Built target vpp_interfaces__rosidl_generator_py
+[0.392s] [ 91%] Built target vpp_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.392s] [ 95%] Built target vpp_interfaces__rosidl_typesupport_c__pyext
+[0.393s] [100%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.427s] running egg_info
+[0.433s] writing vpp_interfaces.egg-info/PKG-INFO
+[0.433s] writing dependency_links to vpp_interfaces.egg-info/dependency_links.txt
+[0.434s] writing top-level names to vpp_interfaces.egg-info/top_level.txt
+[0.453s] reading manifest file 'vpp_interfaces.egg-info/SOURCES.txt'
+[0.453s] writing manifest file 'vpp_interfaces.egg-info/SOURCES.txt'
+[0.474s] [100%] Built target ament_cmake_python_build_vpp_interfaces_egg
+[0.484s] Invoked command in '/home/alpha/Research/voxblox/build/vpp_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/zed_showvideo:/home/alpha/Research/voxblox/install/camera:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --build /home/alpha/Research/voxblox/build/vpp_interfaces -- -j22 -l22
+[0.576s] Invoking command in '/home/alpha/Research/voxblox/build/vpp_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/zed_showvideo:/home/alpha/Research/voxblox/install/camera:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --install /home/alpha/Research/voxblox/build/vpp_interfaces
+[0.580s] -- Install configuration: ""
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/rosidl_interfaces/vpp_interfaces
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/predict_rgb.h
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.580s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__functions.c
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__struct.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__functions.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__functions.c
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__functions.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__type_support.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__struct.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__type_support.h
+[0.581s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/predict_depth.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__functions.c
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__struct.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__functions.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/result.h
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/library_path.sh
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/library_path.dsv
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_c.so
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.582s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__rosidl_typesupport_fastrtps_c.h
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__rosidl_typesupport_fastrtps_c.h
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_fastrtps_c.h
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__traits.hpp
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__traits.hpp
+[0.583s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__struct.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__builder.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__builder.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__struct.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/predict_depth.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/predict_rgb.hpp
+[0.584s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/result.hpp
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__struct.hpp
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__builder.hpp
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__traits.hpp
+[0.585s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/dds_fastrtps
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__rosidl_typesupport_fastrtps_cpp.hpp
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__rosidl_typesupport_fastrtps_cpp.hpp
+[0.586s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/dds_fastrtps
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_fastrtps_cpp.hpp
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.587s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__rosidl_typesupport_introspection_c.h
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__type_support.c
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__rosidl_typesupport_introspection_c.h
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__type_support.c
+[0.588s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.c
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_introspection_c.h
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_c.so
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_c.so
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__type_support.cpp
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__rosidl_typesupport_introspection_cpp.hpp
+[0.589s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_rgb__type_support.cpp
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/srv/detail/predict_depth__rosidl_typesupport_introspection_cpp.hpp
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_introspection_cpp.hpp
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.cpp
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_cpp.so
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/pythonpath.sh
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/pythonpath.dsv
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info
+[0.590s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.590s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.590s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.590s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.590s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv/__init__.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv/_predict_rgb.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv/_predict_depth.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv/_predict_rgb_s.c
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv/_predict_depth_s.c
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/libvpp_interfaces__rosidl_generator_py.so
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/__init__.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/__init__.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/_result.py
+[0.591s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/_result_s.c
+[0.592s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.592s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.592s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.603s] Listing '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces'...
+[0.604s] Listing '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg'...
+[0.604s] Listing '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/srv'...
+[0.606s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.606s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.606s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.606s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_py.so
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/msg/Result.idl
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictRGB.idl
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictDepth.idl
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/msg/Result.msg
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictRGB.srv
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictRGB_Request.msg
+[0.607s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictRGB_Response.msg
+[0.608s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictDepth.srv
+[0.608s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictDepth_Request.msg
+[0.608s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/srv/PredictDepth_Response.msg
+[0.608s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/package_run_dependencies/vpp_interfaces
+[0.608s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/parent_prefix_path/vpp_interfaces
+[0.609s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/ament_prefix_path.sh
+[0.609s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/ament_prefix_path.dsv
+[0.609s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/path.sh
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/path.dsv
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.bash
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.sh
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.zsh
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.dsv
+[0.610s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/package.dsv
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/packages/vpp_interfaces
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cExport.cmake
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cppExport.cmake
+[0.610s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cppExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_pyExport.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.611s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.612s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.612s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfacesConfig.cmake
+[0.612s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfacesConfig-version.cmake
+[0.612s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/package.xml
+[0.612s] Invoked command in '/home/alpha/Research/voxblox/build/vpp_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/zed_showvideo:/home/alpha/Research/voxblox/install/camera:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --install /home/alpha/Research/voxblox/build/vpp_interfaces

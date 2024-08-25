@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vpp_interfaces/msg/Result.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+#include "std_msgs/msg/Header.idl"
+
+module vpp_interfaces {
+  module msg {
+    struct Result {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Bounding boxes in pixels")
+      sensor_msgs::msg::RegionOfInterest boxes;
+
+      @verbatim (language="comment", text=
+        "Integer class IDs for each bounding box")
+      sequence<int64> class_ids;
+
+      @verbatim (language="comment", text=
+        "String class IDs for each bouding box")
+      sequence<string> class_names;
+
+      @verbatim (language="comment", text=
+        "Float probability scores of the class_id")
+      sequence<float> scores;
+
+      @verbatim (language="comment", text=
+        "Instance masks as Image")
+      sequence<sensor_msgs::msg::Image> masks;
+    };
+  };
+};

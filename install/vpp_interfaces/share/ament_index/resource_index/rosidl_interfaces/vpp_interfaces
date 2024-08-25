@@ -1,0 +1,10 @@
+msg/Result.idl
+msg/Result.msg
+srv/PredictDepth.idl
+srv/PredictDepth.srv
+srv/PredictDepth_Request.msg
+srv/PredictDepth_Response.msg
+srv/PredictRGB.idl
+srv/PredictRGB.srv
+srv/PredictRGB_Request.msg
+srv/PredictRGB_Response.msg

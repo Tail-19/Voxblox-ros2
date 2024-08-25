@@ -1,0 +1,2 @@
+[console_scripts]
+camera_zed = camera.camera_zed:main

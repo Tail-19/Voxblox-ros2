@@ -1,0 +1,26 @@
+[0.550s] Invoking command in '/home/alpha/Research/voxblox/src/camera': CONDA_PROMPT_MODIFIER=(voxblox) PYTHONPATH=/home/alpha/Research/voxblox/build/camera/prefix_override:/home/alpha/anaconda3/envs/voxblox/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpha/Research/voxblox/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /home/alpha/anaconda3/envs/voxblox/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/alpha/Research/voxblox/build/camera/build install --record /home/alpha/Research/voxblox/build/camera/install.log --single-version-externally-managed install_data
+[0.688s] running egg_info
+[0.694s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[0.695s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[0.695s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[0.695s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[0.695s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[0.708s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[0.708s] adding license file 'LICENSE'
+[0.709s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[0.709s] running build
+[0.709s] running build_py
+[0.709s] copying camera/__init__.py -> /home/alpha/Research/voxblox/build/camera/build/lib/camera
+[0.710s] copying camera/camera_zed.py -> /home/alpha/Research/voxblox/build/camera/build/lib/camera
+[0.710s] running install
+[0.712s] running install_lib
+[0.719s] running install_data
+[0.719s] copying resource/camera -> /home/alpha/Research/voxblox/install/camera/share/ament_index/resource_index/packages
+[0.719s] copying package.xml -> /home/alpha/Research/voxblox/install/camera/share/camera
+[0.719s] running install_egg_info
+[0.726s] removing '/home/alpha/Research/voxblox/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info' (and everything under it)
+[0.726s] Copying ../../build/camera/camera.egg-info to /home/alpha/Research/voxblox/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info
+[0.726s] running install_scripts
+[0.778s] Installing camera_zed script to /home/alpha/Research/voxblox/install/camera/lib/camera
+[0.778s] writing list of installed files to '/home/alpha/Research/voxblox/build/camera/install.log'
+[0.793s] Invoked command in '/home/alpha/Research/voxblox/src/camera' returned '0': CONDA_PROMPT_MODIFIER=(voxblox) PYTHONPATH=/home/alpha/Research/voxblox/build/camera/prefix_override:/home/alpha/anaconda3/envs/voxblox/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpha/Research/voxblox/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /home/alpha/anaconda3/envs/voxblox/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /home/alpha/Research/voxblox/build/camera/build install --record /home/alpha/Research/voxblox/build/camera/install.log --single-version-externally-managed install_data

@@ -1,0 +1,4 @@
+source;share/vpp_interfaces/local_setup.bash
+source;share/vpp_interfaces/local_setup.dsv
+source;share/vpp_interfaces/local_setup.sh
+source;share/vpp_interfaces/local_setup.zsh
