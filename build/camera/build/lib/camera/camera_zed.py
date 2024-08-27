@@ -22,6 +22,7 @@ class CameraZed(Node):
         self.zed = sl.Camera()
         init_params = sl.InitParameters()
         init_params.camera_resolution = sl.RESOLUTION.AUTO # Use HD720 opr HD1200 video mode, depending on camera type.
+        print(init_params.camera_resolution)
         err = self.zed.open(init_params)
         if err != sl.ERROR_CODE.SUCCESS:
             print("Camera Open : "+repr(err)+". Exit program.")
@@ -30,6 +31,8 @@ class CameraZed(Node):
         self.bridge = CvBridge()
         
         self.timer = self.create_timer(1/CAMERA_FPS, self.timer_callback)
+        
+        self.get_logger().info("Publishing ZED image frame, wait for image processing...")
 
     def timer_callback(self):
         image = sl.Mat()
@@ -41,7 +44,7 @@ class CameraZed(Node):
             image_msg = self.bridge.cv2_to_imgmsg(image, "bgra8") #convert numpy tensor to image message, bgra8 is the encoding type
 
             self._publisher.publish(image_msg)
-            self.get_logger().info("Publishing ZED image frame, wait for image processing...")
+            
         
 def main(args=None):
     rclpy.init(args=args)

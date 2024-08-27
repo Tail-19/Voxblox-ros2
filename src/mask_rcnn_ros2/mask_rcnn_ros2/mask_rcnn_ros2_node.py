@@ -71,7 +71,7 @@ class MaskRCNNNode(Node):
         self._predict = MaskRCNN(self._cfg, parallel=True)
         
         qos_profile = QoSProfile(depth=50) # Here 50 is optimal for zed camera
-        self._result_sub = self.create_subscription(Image, '/camera/image_raw', self._handle_process_image, qos_profile) #subscribe to topic 'image_raw'
+        self._result_sub = self.create_subscription(Image, '/camera/image_raw', self._handle_process_image, qos_profile) # Subscribe to topic 'image_raw'
         self._result_pub = self.create_publisher(Result, 'result', 1) # Publish result_msg to topic 'result'
         self._vis_pub = self.create_publisher(Image, 'visualization', 1)
         
@@ -87,17 +87,15 @@ class MaskRCNNNode(Node):
         self.get_logger().info('Received an image, processing...')
         bgr_image = self._cv_bridge.imgmsg_to_cv2(msg, 'bgr8') #convert image message to numpy tensor
         
-        self.get_logger().info(str(bgr_image.shape))
-        
         start = time.time()
         predictions, visualized_output = self._predict.run_on_image(bgr_image) #the images here should be in BGR format
-
-        print("single image publish time: ", time.time() - start)
+        
         image_msg = self._cv_bridge.cv2_to_imgmsg(visualized_output.get_image(), 'bgr8')
         self._vis_pub.publish(image_msg)
         result_msg = self._build_result_msg(msg.header, predictions)
         self._result_pub.publish(result_msg)
         
+        print("single image pub time: ", time.time() - start)
         return
     
     def _build_result_msg(self, header, predictions):
