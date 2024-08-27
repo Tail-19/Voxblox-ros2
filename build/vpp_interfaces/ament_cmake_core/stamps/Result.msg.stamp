@@ -1,7 +1,7 @@
 std_msgs/Header header
 
 # Bounding boxes in pixels
-sensor_msgs/RegionOfInterest boxes
+sensor_msgs/RegionOfInterest[] boxes
 
 # Integer class IDs for each bounding box
 int64[] class_ids

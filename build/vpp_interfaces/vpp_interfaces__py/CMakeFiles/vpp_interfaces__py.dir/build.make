@@ -70,13 +70,8 @@ include /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMa
 /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c
 /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/_result.py
-/home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_rgb.py
-/home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_depth.py
 /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/__init__.py
-/home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/__init__.py
 /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/_result_s.c
-/home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_rgb_s.c
-/home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_depth_s.c
 
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -92,8 +87,6 @@ rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vpp_interfaces/msg/Result.idl
-rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vpp_interfaces/srv/PredictRGB.idl
-rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vpp_interfaces/srv/PredictDepth.idl
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
@@ -196,26 +189,11 @@ rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c: 
 rosidl_generator_py/vpp_interfaces/msg/_result.py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/msg/_result.py
 
-rosidl_generator_py/vpp_interfaces/srv/_predict_rgb.py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/srv/_predict_rgb.py
-
-rosidl_generator_py/vpp_interfaces/srv/_predict_depth.py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/srv/_predict_depth.py
-
 rosidl_generator_py/vpp_interfaces/msg/__init__.py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/msg/__init__.py
 
-rosidl_generator_py/vpp_interfaces/srv/__init__.py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/srv/__init__.py
-
 rosidl_generator_py/vpp_interfaces/msg/_result_s.c: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/msg/_result_s.c
-
-rosidl_generator_py/vpp_interfaces/srv/_predict_rgb_s.c: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/srv/_predict_rgb_s.c
-
-rosidl_generator_py/vpp_interfaces/srv/_predict_depth_s.c: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vpp_interfaces/srv/_predict_depth_s.c
 
 vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c
 vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -223,11 +201,6 @@ vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosi
 vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/__init__.py
 vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/_result.py
 vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/msg/_result_s.c
-vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/__init__.py
-vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_depth.py
-vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_depth_s.c
-vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_rgb.py
-vpp_interfaces__py: rosidl_generator_py/vpp_interfaces/srv/_predict_rgb_s.c
 vpp_interfaces__py: /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py
 vpp_interfaces__py: /home/alpha/Research/voxblox/build/vpp_interfaces/vpp_interfaces__py/CMakeFiles/vpp_interfaces__py.dir/build.make
 .PHONY : vpp_interfaces__py

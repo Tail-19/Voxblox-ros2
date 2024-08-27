@@ -70,14 +70,6 @@ CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/result.h
 CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__builder.hpp
 CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__struct.hpp
 CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__traits.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/predict_rgb.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__builder.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__struct.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__traits.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/predict_depth.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__builder.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__struct.hpp
-CMakeFiles/vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__traits.hpp
 
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -95,8 +87,6 @@ rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/rosidl
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: rosidl_adapter/vpp_interfaces/msg/Result.idl
-rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: rosidl_adapter/vpp_interfaces/srv/PredictRGB.idl
-rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: rosidl_adapter/vpp_interfaces/srv/PredictDepth.idl
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 rosidl_generator_cpp/vpp_interfaces/msg/result.hpp: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
@@ -199,43 +189,11 @@ rosidl_generator_cpp/vpp_interfaces/msg/detail/result__struct.hpp: rosidl_genera
 rosidl_generator_cpp/vpp_interfaces/msg/detail/result__traits.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/msg/detail/result__traits.hpp
 
-rosidl_generator_cpp/vpp_interfaces/srv/predict_rgb.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/predict_rgb.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__builder.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__builder.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__struct.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__struct.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__traits.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__traits.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/predict_depth.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/predict_depth.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__builder.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__builder.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__struct.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__struct.hpp
-
-rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__traits.hpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__traits.hpp
-
 vpp_interfaces__cpp: CMakeFiles/vpp_interfaces__cpp
 vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__builder.hpp
 vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__struct.hpp
 vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/detail/result__traits.hpp
 vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/msg/result.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__builder.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__struct.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__traits.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__builder.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__struct.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__traits.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/predict_depth.hpp
-vpp_interfaces__cpp: rosidl_generator_cpp/vpp_interfaces/srv/predict_rgb.hpp
 vpp_interfaces__cpp: CMakeFiles/vpp_interfaces__cpp.dir/build.make
 .PHONY : vpp_interfaces__cpp
 

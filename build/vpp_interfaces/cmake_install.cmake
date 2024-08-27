@@ -372,39 +372,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces/srv/PredictRGB.idl")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces/srv/PredictDepth.idl")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/msg" TYPE FILE FILES "/home/alpha/Research/voxblox/src/vpp_interfaces/msg/Result.msg")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/src/vpp_interfaces/srv/PredictRGB.srv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_cmake/srv/PredictRGB_Request.msg")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_cmake/srv/PredictRGB_Response.msg")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/src/vpp_interfaces/srv/PredictDepth.srv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_cmake/srv/PredictDepth_Request.msg")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vpp_interfaces/srv" TYPE FILE FILES "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_cmake/srv/PredictDepth_Response.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

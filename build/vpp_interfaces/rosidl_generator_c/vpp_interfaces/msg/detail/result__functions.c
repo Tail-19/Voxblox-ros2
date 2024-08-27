@@ -36,7 +36,7 @@ vpp_interfaces__msg__Result__init(vpp_interfaces__msg__Result * msg)
     return false;
   }
   // boxes
-  if (!sensor_msgs__msg__RegionOfInterest__init(&msg->boxes)) {
+  if (!sensor_msgs__msg__RegionOfInterest__Sequence__init(&msg->boxes, 0)) {
     vpp_interfaces__msg__Result__fini(msg);
     return false;
   }
@@ -72,7 +72,7 @@ vpp_interfaces__msg__Result__fini(vpp_interfaces__msg__Result * msg)
   // header
   std_msgs__msg__Header__fini(&msg->header);
   // boxes
-  sensor_msgs__msg__RegionOfInterest__fini(&msg->boxes);
+  sensor_msgs__msg__RegionOfInterest__Sequence__fini(&msg->boxes);
   // class_ids
   rosidl_runtime_c__int64__Sequence__fini(&msg->class_ids);
   // class_names
@@ -96,7 +96,7 @@ vpp_interfaces__msg__Result__are_equal(const vpp_interfaces__msg__Result * lhs, 
     return false;
   }
   // boxes
-  if (!sensor_msgs__msg__RegionOfInterest__are_equal(
+  if (!sensor_msgs__msg__RegionOfInterest__Sequence__are_equal(
       &(lhs->boxes), &(rhs->boxes)))
   {
     return false;
@@ -143,7 +143,7 @@ vpp_interfaces__msg__Result__copy(
     return false;
   }
   // boxes
-  if (!sensor_msgs__msg__RegionOfInterest__copy(
+  if (!sensor_msgs__msg__RegionOfInterest__Sequence__copy(
       &(input->boxes), &(output->boxes)))
   {
     return false;

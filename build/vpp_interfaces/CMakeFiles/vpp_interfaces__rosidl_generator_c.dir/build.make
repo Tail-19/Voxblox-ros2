@@ -83,8 +83,6 @@ rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/rosidl_gen
 rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/vpp_interfaces/msg/result.h: rosidl_adapter/vpp_interfaces/msg/Result.idl
-rosidl_generator_c/vpp_interfaces/msg/result.h: rosidl_adapter/vpp_interfaces/srv/PredictRGB.idl
-rosidl_generator_c/vpp_interfaces/msg/result.h: rosidl_adapter/vpp_interfaces/srv/PredictDepth.idl
 rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 rosidl_generator_c/vpp_interfaces/msg/result.h: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
@@ -187,38 +185,8 @@ rosidl_generator_c/vpp_interfaces/msg/detail/result__struct.h: rosidl_generator_
 rosidl_generator_c/vpp_interfaces/msg/detail/result__type_support.h: rosidl_generator_c/vpp_interfaces/msg/result.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/msg/detail/result__type_support.h
 
-rosidl_generator_c/vpp_interfaces/srv/predict_rgb.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/predict_rgb.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__struct.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__struct.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__type_support.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__type_support.h
-
-rosidl_generator_c/vpp_interfaces/srv/predict_depth.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/predict_depth.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__struct.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__struct.h
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__type_support.h: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__type_support.h
-
 rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c: rosidl_generator_c/vpp_interfaces/msg/result.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c
-
-rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c: rosidl_generator_c/vpp_interfaces/msg/result.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c
 
 CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o: rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c
@@ -234,46 +202,14 @@ CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfa
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c -o CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.s
 
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/flags.make
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o: rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o -MF CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o.d -o CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o -c /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c
-
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c > CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.i
-
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c -o CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.s
-
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/flags.make
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o: rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o -MF CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o.d -o CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o -c /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c
-
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c > CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.i
-
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c -o CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.s
-
 # Object files for target vpp_interfaces__rosidl_generator_c
 vpp_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o" \
-"CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o" \
-"CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o"
+"CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o"
 
 # External object files for target vpp_interfaces__rosidl_generator_c
 vpp_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libvpp_interfaces__rosidl_generator_c.so: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o
-libvpp_interfaces__rosidl_generator_c.so: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c.o
-libvpp_interfaces__rosidl_generator_c.so: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c.o
 libvpp_interfaces__rosidl_generator_c.so: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/build.make
 libvpp_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 libvpp_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
@@ -282,7 +218,7 @@ libvpp_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfa
 libvpp_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libvpp_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libvpp_interfaces__rosidl_generator_c.so: CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libvpp_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libvpp_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -298,16 +234,6 @@ CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp
 CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/msg/detail/result__struct.h
 CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/msg/detail/result__type_support.h
 CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/msg/result.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.c
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__functions.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__struct.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_depth__type_support.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.c
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__functions.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__struct.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/detail/predict_rgb__type_support.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/predict_depth.h
-CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vpp_interfaces/srv/predict_rgb.h
 	cd /home/alpha/Research/voxblox/build/vpp_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alpha/Research/voxblox/src/vpp_interfaces /home/alpha/Research/voxblox/src/vpp_interfaces /home/alpha/Research/voxblox/build/vpp_interfaces /home/alpha/Research/voxblox/build/vpp_interfaces /home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/depend
 

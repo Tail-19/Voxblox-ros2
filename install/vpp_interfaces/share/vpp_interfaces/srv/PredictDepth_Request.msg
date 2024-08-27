@@ -1,3 +1,0 @@
-#Predict Depth Images
-sensor_msgs/Image image
-vpp_interfaces/Result result

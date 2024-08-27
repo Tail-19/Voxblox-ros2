@@ -15,14 +15,6 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/detail/result__builder.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
   "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/detail/result__struct.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
   "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/detail/result__traits.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__builder.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__struct.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_depth__traits.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__builder.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__struct.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/detail/predict_rgb__traits.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/predict_depth.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
-  "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/srv/predict_rgb.hpp" "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_cpp/vpp_interfaces/msg/result.hpp"
   )
 
 

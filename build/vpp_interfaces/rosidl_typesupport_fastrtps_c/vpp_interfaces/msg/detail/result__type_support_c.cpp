@@ -119,10 +119,15 @@ static bool _Result__cdr_serialize(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, sensor_msgs, msg, RegionOfInterest
       )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->boxes, cdr))
-    {
-      return false;
+    size_t size = ros_message->boxes.size;
+    auto array_ptr = ros_message->boxes.data;
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_serialize(
+          &array_ptr[i], cdr))
+      {
+        return false;
+      }
     }
   }
 
@@ -213,10 +218,23 @@ static bool _Result__cdr_deserialize(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, sensor_msgs, msg, RegionOfInterest
       )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->boxes))
-    {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->boxes.data) {
+      sensor_msgs__msg__RegionOfInterest__Sequence__fini(&ros_message->boxes);
+    }
+    if (!sensor_msgs__msg__RegionOfInterest__Sequence__init(&ros_message->boxes, size)) {
+      fprintf(stderr, "failed to create array for field 'boxes'");
       return false;
+    }
+    auto array_ptr = ros_message->boxes.data;
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_deserialize(
+          cdr, &array_ptr[i]))
+      {
+        return false;
+      }
     }
   }
 
@@ -331,9 +349,17 @@ size_t get_serialized_size_vpp_interfaces__msg__Result(
   current_alignment += get_serialized_size_std_msgs__msg__Header(
     &(ros_message->header), current_alignment);
   // field.name boxes
+  {
+    size_t array_size = ros_message->boxes.size;
+    auto array_ptr = ros_message->boxes.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-  current_alignment += get_serialized_size_sensor_msgs__msg__RegionOfInterest(
-    &(ros_message->boxes), current_alignment);
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += get_serialized_size_sensor_msgs__msg__RegionOfInterest(
+        &array_ptr[index], current_alignment);
+    }
+  }
   // field.name class_ids
   {
     size_t array_size = ros_message->class_ids.size;
@@ -430,7 +456,11 @@ size_t max_serialized_size_vpp_interfaces__msg__Result(
   }
   // member: boxes
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
 
     last_member_size = 0;

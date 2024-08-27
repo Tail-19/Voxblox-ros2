@@ -1,0 +1,324 @@
+[0.239s] Invoking command in '/home/alpha/Research/voxblox/build/vpp_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake /home/alpha/Research/voxblox/src/vpp_interfaces -DCMAKE_INSTALL_PREFIX=/home/alpha/Research/voxblox/install/vpp_interfaces
+[0.352s] -- The C compiler identification is GNU 11.4.0
+[0.442s] -- The CXX compiler identification is GNU 11.4.0
+[0.459s] -- Detecting C compiler ABI info
+[0.529s] -- Detecting C compiler ABI info - done
+[0.541s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.542s] -- Detecting C compile features
+[0.542s] -- Detecting C compile features - done
+[0.544s] -- Detecting CXX compiler ABI info
+[0.610s] -- Detecting CXX compiler ABI info - done
+[0.625s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.625s] -- Detecting CXX compile features
+[0.625s] -- Detecting CXX compile features - done
+[0.629s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.726s] -- Found Python3: /home/alpha/anaconda3/envs/voxblox/bin/python3 (found version "3.10.14") found components: Interpreter
+[0.793s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.824s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.827s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.834s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.853s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.875s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.925s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.276s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.980s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.245s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.247s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.247s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.247s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.247s]   the cmake_policy command to set the policy and suppress this warning.
+[2.247s] 
+[2.248s] Call Stack (most recent call first):
+[2.248s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.248s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.248s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.248s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.248s] [0m
+[2.259s] -- Found PythonInterp: /home/alpha/anaconda3/envs/voxblox/bin/python3 (found suitable version "3.10.14", minimum required is "3.6")
+[2.260s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.261s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.261s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.261s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.261s]   the cmake_policy command to set the policy and suppress this warning.
+[2.261s] 
+[2.261s] Call Stack (most recent call first):
+[2.261s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.261s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.261s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.261s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.262s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.262s] [0m
+[2.277s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.277s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.277s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.277s]   the cmake_policy command to set the policy and suppress this warning.
+[2.277s] 
+[2.278s] Call Stack (most recent call first):
+[2.278s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.278s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.278s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.278s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.278s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.278s] [0m
+[2.285s] -- Found PythonLibs: /home/alpha/anaconda3/envs/voxblox/lib/libpython3.10.so (found suitable version "3.10.14", minimum required is "3.5")
+[2.285s] -- Using PYTHON_EXECUTABLE: /home/alpha/anaconda3/envs/voxblox/bin/python3
+[2.285s] -- Using PYTHON_INCLUDE_DIRS: /home/alpha/anaconda3/envs/voxblox/include/python3.10
+[2.285s] -- Using PYTHON_LIBRARIES: /home/alpha/anaconda3/envs/voxblox/lib/libpython3.10.so
+[2.299s] -- Found PythonExtra: .so
+[2.462s] -- Using numpy include directory: /home/alpha/.local/lib/python3.10/site-packages/numpy/core/include
+[2.472s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.486s] -- Added test 'lint_cmake' to check CMake code style
+[2.487s] -- Added test 'xmllint' to check XML markup files
+[2.488s] -- Configuring done (2.2s)
+[2.503s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):
+[2.503s]   Cannot generate a safe runtime search path for target
+[2.503s]   vpp_interfaces__rosidl_generator_py because files in some directories may
+[2.503s]   conflict with libraries in implicit directories:
+[2.503s] 
+[2.503s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.503s]       /home/alpha/anaconda3/envs/voxblox/lib
+[2.503s] 
+[2.503s]   Some of these libraries may not be found correctly.
+[2.503s] Call Stack (most recent call first):
+[2.504s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.504s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.504s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.504s] 
+[2.504s] [0m
+[2.504s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[2.504s]   Cannot generate a safe runtime search path for target
+[2.505s]   vpp_interfaces__rosidl_typesupport_fastrtps_c__pyext because files in some
+[2.505s]   directories may conflict with libraries in implicit directories:
+[2.505s] 
+[2.505s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.505s]       /home/alpha/anaconda3/envs/voxblox/lib
+[2.505s] 
+[2.505s]   Some of these libraries may not be found correctly.
+[2.505s] Call Stack (most recent call first):
+[2.505s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.505s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.505s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.505s] 
+[2.505s] [0m
+[2.506s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[2.506s]   Cannot generate a safe runtime search path for target
+[2.506s]   vpp_interfaces__rosidl_typesupport_introspection_c__pyext because files in
+[2.506s]   some directories may conflict with libraries in implicit directories:
+[2.506s] 
+[2.506s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.506s]       /home/alpha/anaconda3/envs/voxblox/lib
+[2.506s] 
+[2.506s]   Some of these libraries may not be found correctly.
+[2.506s] Call Stack (most recent call first):
+[2.506s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.506s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.506s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.507s] 
+[2.507s] [0m
+[2.507s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[2.507s]   Cannot generate a safe runtime search path for target
+[2.507s]   vpp_interfaces__rosidl_typesupport_c__pyext because files in some
+[2.507s]   directories may conflict with libraries in implicit directories:
+[2.507s] 
+[2.508s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.508s]       /home/alpha/anaconda3/envs/voxblox/lib
+[2.508s] 
+[2.508s]   Some of these libraries may not be found correctly.
+[2.508s] Call Stack (most recent call first):
+[2.508s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.508s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.508s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.508s] 
+[2.508s] [0m
+[2.511s] -- Generating done (0.0s)
+[2.511s] -- Build files have been written to: /home/alpha/Research/voxblox/build/vpp_interfaces
+[2.519s] Invoked command in '/home/alpha/Research/voxblox/build/vpp_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake /home/alpha/Research/voxblox/src/vpp_interfaces -DCMAKE_INSTALL_PREFIX=/home/alpha/Research/voxblox/install/vpp_interfaces
+[2.521s] Invoking command in '/home/alpha/Research/voxblox/build/vpp_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --build /home/alpha/Research/voxblox/build/vpp_interfaces -- -j22 -l22
+[2.556s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.562s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.568s] [  6%] Built target ament_cmake_python_copy_vpp_interfaces
+[2.691s] running egg_info
+[2.691s] creating vpp_interfaces.egg-info
+[2.697s] writing vpp_interfaces.egg-info/PKG-INFO
+[2.698s] writing dependency_links to vpp_interfaces.egg-info/dependency_links.txt
+[2.698s] writing top-level names to vpp_interfaces.egg-info/top_level.txt
+[2.698s] writing manifest file 'vpp_interfaces.egg-info/SOURCES.txt'
+[2.718s] reading manifest file 'vpp_interfaces.egg-info/SOURCES.txt'
+[2.718s] writing manifest file 'vpp_interfaces.egg-info/SOURCES.txt'
+[2.735s] [  6%] Built target ament_cmake_python_build_vpp_interfaces_egg
+[2.738s] [  6%] Built target vpp_interfaces__cpp
+[2.743s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.745s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.746s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.780s] [ 19%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vpp_interfaces/msg/detail/result__functions.c.o[0m
+[2.822s] [ 22%] [32m[1mLinking C shared library libvpp_interfaces__rosidl_generator_c.so[0m
+[2.852s] [ 22%] Built target vpp_interfaces__rosidl_generator_c
+[2.857s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.860s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.866s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.903s] [ 35%] [32mBuilding CXX object CMakeFiles/vpp_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vpp_interfaces/msg/result__type_support.cpp.o[0m
+[2.924s] [ 38%] [32mBuilding CXX object CMakeFiles/vpp_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vpp_interfaces/msg/detail/dds_fastrtps/result__type_support.cpp.o[0m
+[2.934s] [ 41%] [32mBuilding CXX object CMakeFiles/vpp_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vpp_interfaces/msg/detail/result__type_support.cpp.o[0m
+[3.047s] [ 45%] [32mBuilding CXX object CMakeFiles/vpp_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vpp_interfaces/msg/detail/result__type_support_c.cpp.o[0m
+[3.047s] [ 48%] [32mBuilding CXX object CMakeFiles/vpp_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/vpp_interfaces/msg/result__type_support.cpp.o[0m
+[3.052s] [ 51%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vpp_interfaces/msg/detail/result__type_support.c.o[0m
+[3.065s] [ 54%] [32m[1mLinking CXX shared library libvpp_interfaces__rosidl_typesupport_c.so[0m
+[3.068s] [ 58%] [32m[1mLinking CXX shared library libvpp_interfaces__rosidl_typesupport_cpp.so[0m
+[3.081s] [ 61%] [32m[1mLinking C shared library libvpp_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.087s] [ 61%] Built target vpp_interfaces__rosidl_typesupport_c
+[3.089s] [ 61%] Built target vpp_interfaces__rosidl_typesupport_cpp
+[3.099s] [ 61%] Built target vpp_interfaces__rosidl_typesupport_introspection_c
+[3.233s] [ 64%] [32m[1mLinking CXX shared library libvpp_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.267s] [ 67%] [32m[1mLinking CXX shared library libvpp_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.303s] [ 67%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_c
+[3.319s] [ 70%] [32m[1mLinking CXX shared library libvpp_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.329s] [ 70%] Built target vpp_interfaces__rosidl_typesupport_introspection_cpp
+[3.368s] [ 70%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.385s] [ 70%] Built target vpp_interfaces
+[3.405s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.653s] [ 74%] Built target vpp_interfaces__py
+[3.667s] [ 77%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vpp_interfaces/msg/_result_s.c.o[0m
+[3.778s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/vpp_interfaces/libvpp_interfaces__rosidl_generator_py.so[0m
+[3.827s] [ 80%] Built target vpp_interfaces__rosidl_generator_py
+[3.838s] [ 83%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.840s] [ 87%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.841s] [ 90%] [32mBuilding C object CMakeFiles/vpp_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.892s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.897s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.898s] [100%] [32m[1mLinking C shared library rosidl_generator_py/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.917s] [100%] Built target vpp_interfaces__rosidl_typesupport_c__pyext
+[3.921s] [100%] Built target vpp_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.930s] [100%] Built target vpp_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.940s] Invoked command in '/home/alpha/Research/voxblox/build/vpp_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --build /home/alpha/Research/voxblox/build/vpp_interfaces -- -j22 -l22
+[4.008s] Invoking command in '/home/alpha/Research/voxblox/build/vpp_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --install /home/alpha/Research/voxblox/build/vpp_interfaces
+[4.014s] -- Install configuration: ""
+[4.014s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/rosidl_interfaces/vpp_interfaces
+[4.014s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.014s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.014s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.014s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__functions.c
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.h
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__struct.h
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__functions.h
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/result.h
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/library_path.sh
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/library_path.dsv
+[4.015s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_c.so
+[4.015s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_c.so" to ""
+[4.016s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.016s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.016s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.016s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_fastrtps_c.h
+[4.016s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.016s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.016s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.016s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.016s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.016s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/result.hpp
+[4.017s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__struct.hpp
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__builder.hpp
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__traits.hpp
+[4.017s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.017s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.017s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/dds_fastrtps
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_fastrtps_cpp.hpp
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.017s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.018s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.018s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.018s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.018s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.018s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.018s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.c
+[4.018s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_introspection_c.h
+[4.018s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_c.so
+[4.018s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.018s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_c.so
+[4.019s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_c.so" to ""
+[4.019s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces
+[4.019s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg
+[4.019s] -- Up-to-date: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail
+[4.019s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__rosidl_typesupport_introspection_cpp.hpp
+[4.019s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/include/vpp_interfaces/vpp_interfaces/msg/detail/result__type_support.cpp
+[4.019s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.020s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.020s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_cpp.so
+[4.020s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_typesupport_cpp.so" to ""
+[4.020s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/pythonpath.sh
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/pythonpath.dsv
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_c.c
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/libvpp_interfaces__rosidl_generator_py.so
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/__init__.py
+[4.021s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/__init__.py
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/_result.py
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/_result_s.c
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/_vpp_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.022s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.054s] Listing '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces'...
+[4.054s] Compiling '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/__init__.py'...
+[4.054s] Listing '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg'...
+[4.054s] Compiling '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/__init__.py'...
+[4.054s] Compiling '/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/msg/_result.py'...
+[4.057s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.057s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.057s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.057s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.058s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.058s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/python3.10/site-packages/vpp_interfaces/vpp_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.058s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_py.so
+[4.058s] -- Set non-toolchain portion of runtime path of "/home/alpha/Research/voxblox/install/vpp_interfaces/lib/libvpp_interfaces__rosidl_generator_py.so" to ""
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/msg/Result.idl
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/msg/Result.msg
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/package_run_dependencies/vpp_interfaces
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/parent_prefix_path/vpp_interfaces
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/ament_prefix_path.sh
+[4.059s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/ament_prefix_path.dsv
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/path.sh
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/environment/path.dsv
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.bash
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.sh
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.zsh
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/local_setup.dsv
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/package.dsv
+[4.060s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/ament_index/resource_index/packages/vpp_interfaces
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cExport.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_cppExport.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.061s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cExport.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cppExport.cmake
+[4.062s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_pyExport.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/export_vpp_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.063s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfacesConfig.cmake
+[4.064s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/cmake/vpp_interfacesConfig-version.cmake
+[4.064s] -- Installing: /home/alpha/Research/voxblox/install/vpp_interfaces/share/vpp_interfaces/package.xml
+[4.067s] Invoked command in '/home/alpha/Research/voxblox/build/vpp_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpha/Research/voxblox/install/mask_rcnn_ros2:/home/alpha/Research/voxblox/install/camera:/opt/ros/humble CONDA_PROMPT_MODIFIER=(voxblox) /home/alpha/anaconda3/envs/voxblox/bin/cmake --install /home/alpha/Research/voxblox/build/vpp_interfaces

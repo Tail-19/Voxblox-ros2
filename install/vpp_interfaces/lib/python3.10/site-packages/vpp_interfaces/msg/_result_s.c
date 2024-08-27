@@ -24,6 +24,7 @@
 
 // Nested array functions includes
 #include "sensor_msgs/msg/detail/image__functions.h"
+#include "sensor_msgs/msg/detail/region_of_interest__functions.h"
 // end nested array functions include
 ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
@@ -87,10 +88,32 @@ bool vpp_interfaces__msg__result__convert_from_py(PyObject * _pymsg, void * _ros
     if (!field) {
       return false;
     }
-    if (!sensor_msgs__msg__region_of_interest__convert_from_py(field, &ros_message->boxes)) {
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'boxes'");
+    if (!seq_field) {
       Py_DECREF(field);
       return false;
     }
+    Py_ssize_t size = PySequence_Size(field);
+    if (-1 == size) {
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    if (!sensor_msgs__msg__RegionOfInterest__Sequence__init(&(ros_message->boxes), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create sensor_msgs__msg__RegionOfInterest__Sequence ros_message");
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    sensor_msgs__msg__RegionOfInterest * dest = ros_message->boxes.data;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      if (!sensor_msgs__msg__region_of_interest__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+    }
+    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
   {  // class_ids
@@ -333,10 +356,24 @@ PyObject * vpp_interfaces__msg__result__convert_to_py(void * raw_ros_message)
   }
   {  // boxes
     PyObject * field = NULL;
-    field = sensor_msgs__msg__region_of_interest__convert_to_py(&ros_message->boxes);
+    size_t size = ros_message->boxes.size;
+    field = PyList_New(size);
     if (!field) {
       return NULL;
     }
+    sensor_msgs__msg__RegionOfInterest * item;
+    for (size_t i = 0; i < size; ++i) {
+      item = &(ros_message->boxes.data[i]);
+      PyObject * pyitem = sensor_msgs__msg__region_of_interest__convert_to_py(item);
+      if (!pyitem) {
+        Py_DECREF(field);
+        return NULL;
+      }
+      int rc = PyList_SetItem(field, i, pyitem);
+      (void)rc;
+      assert(rc == 0);
+    }
+    assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "boxes", field);
       Py_DECREF(field);

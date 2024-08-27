@@ -1,8 +1,6 @@
 {
   "package_name": "vpp_interfaces",
   "non_idl_tuples": [
-    "/home/alpha/Research/voxblox/src/vpp_interfaces:msg/Result.msg",
-    "/home/alpha/Research/voxblox/src/vpp_interfaces:srv/PredictRGB.srv",
-    "/home/alpha/Research/voxblox/src/vpp_interfaces:srv/PredictDepth.srv"
+    "/home/alpha/Research/voxblox/src/vpp_interfaces:msg/Result.msg"
   ]
 }

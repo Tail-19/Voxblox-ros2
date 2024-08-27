@@ -19,8 +19,6 @@ find_package(rosidl_default_generators REQUIRED)
 #change2
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Result.msg"
-  "srv/PredictRGB.srv"
-  "srv/PredictDepth.srv"
   DEPENDENCIES sensor_msgs
   DEPENDENCIES std_msgs
 )

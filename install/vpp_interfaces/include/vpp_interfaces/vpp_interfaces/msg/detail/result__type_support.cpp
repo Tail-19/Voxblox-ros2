@@ -37,6 +37,51 @@ void Result_fini_function(void * message_memory)
   typed_message->~Result();
 }
 
+size_t size_function__Result__boxes(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<sensor_msgs::msg::RegionOfInterest> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Result__boxes(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<sensor_msgs::msg::RegionOfInterest> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Result__boxes(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<sensor_msgs::msg::RegionOfInterest> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Result__boxes(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const sensor_msgs::msg::RegionOfInterest *>(
+    get_const_function__Result__boxes(untyped_member, index));
+  auto & value = *reinterpret_cast<sensor_msgs::msg::RegionOfInterest *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Result__boxes(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<sensor_msgs::msg::RegionOfInterest *>(
+    get_function__Result__boxes(untyped_member, index));
+  const auto & value = *reinterpret_cast<const sensor_msgs::msg::RegionOfInterest *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Result__boxes(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<sensor_msgs::msg::RegionOfInterest> *>(untyped_member);
+  member->resize(size);
+}
+
 size_t size_function__Result__class_ids(const void * untyped_member)
 {
   const auto * member = reinterpret_cast<const std::vector<int64_t> *>(untyped_member);
@@ -240,17 +285,17 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Result_messag
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<sensor_msgs::msg::RegionOfInterest>(),  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(vpp_interfaces::msg::Result, boxes),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__Result__boxes,  // size() function pointer
+    get_const_function__Result__boxes,  // get_const(index) function pointer
+    get_function__Result__boxes,  // get(index) function pointer
+    fetch_function__Result__boxes,  // fetch(index, &value) function pointer
+    assign_function__Result__boxes,  // assign(index, value) function pointer
+    resize_function__Result__boxes  // resize(index) function pointer
   },
   {
     "class_ids",  // name

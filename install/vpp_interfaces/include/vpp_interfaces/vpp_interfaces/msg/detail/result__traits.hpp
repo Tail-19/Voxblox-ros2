@@ -42,8 +42,19 @@ inline void to_flow_style_yaml(
 
   // member: boxes
   {
-    out << "boxes: ";
-    to_flow_style_yaml(msg.boxes, out);
+    if (msg.boxes.size() == 0) {
+      out << "boxes: []";
+    } else {
+      out << "boxes: [";
+      size_t pending_items = msg.boxes.size();
+      for (auto item : msg.boxes) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
     out << ", ";
   }
 
@@ -138,8 +149,18 @@ inline void to_block_style_yaml(
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "boxes:\n";
-    to_block_style_yaml(msg.boxes, out, indentation + 2);
+    if (msg.boxes.size() == 0) {
+      out << "boxes: []\n";
+    } else {
+      out << "boxes:\n";
+      for (auto item : msg.boxes) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
   }
 
   // member: class_ids

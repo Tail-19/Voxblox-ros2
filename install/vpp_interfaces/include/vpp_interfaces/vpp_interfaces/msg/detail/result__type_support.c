@@ -50,6 +50,61 @@ void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_fin
   vpp_interfaces__msg__Result__fini(message_memory);
 }
 
+size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes(
+  const void * untyped_member)
+{
+  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(
+  const void * untyped_member, size_t index)
+{
+  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(
+  void * untyped_member, size_t index)
+{
+  sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const sensor_msgs__msg__RegionOfInterest * item =
+    ((const sensor_msgs__msg__RegionOfInterest *)
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(untyped_member, index));
+  sensor_msgs__msg__RegionOfInterest * value =
+    (sensor_msgs__msg__RegionOfInterest *)(untyped_value);
+  *value = *item;
+}
+
+void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  sensor_msgs__msg__RegionOfInterest * item =
+    ((sensor_msgs__msg__RegionOfInterest *)
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(untyped_member, index));
+  const sensor_msgs__msg__RegionOfInterest * value =
+    (const sensor_msgs__msg__RegionOfInterest *)(untyped_value);
+  *item = *value;
+}
+
+bool vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes(
+  void * untyped_member, size_t size)
+{
+  sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  sensor_msgs__msg__RegionOfInterest__Sequence__fini(member);
+  return sensor_msgs__msg__RegionOfInterest__Sequence__init(member, size);
+}
+
 size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__class_ids(
   const void * untyped_member)
 {
@@ -293,17 +348,17 @@ static rosidl_typesupport_introspection_c__MessageMember vpp_interfaces__msg__Re
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(vpp_interfaces__msg__Result, boxes),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes,  // size() function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes,  // get_const(index) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes,  // get(index) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes,  // fetch(index, &value) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes,  // assign(index, value) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes  // resize(index) function pointer
   },
   {
     "class_ids",  // name

@@ -42,15 +42,13 @@ struct Result_
   using Type = Result_<ContainerAllocator>;
 
   explicit Result_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_init),
-    boxes(_init)
+  : header(_init)
   {
     (void)_init;
   }
 
   explicit Result_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_alloc, _init),
-    boxes(_alloc, _init)
+  : header(_alloc, _init)
   {
     (void)_init;
   }
@@ -60,7 +58,7 @@ struct Result_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _boxes_type =
-    sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>;
+    std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>>;
   _boxes_type boxes;
   using _class_ids_type =
     std::vector<int64_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<int64_t>>;
@@ -83,7 +81,7 @@ struct Result_
     return *this;
   }
   Type & set__boxes(
-    const sensor_msgs::msg::RegionOfInterest_<ContainerAllocator> & _arg)
+    const std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>> & _arg)
   {
     this->boxes = _arg;
     return *this;

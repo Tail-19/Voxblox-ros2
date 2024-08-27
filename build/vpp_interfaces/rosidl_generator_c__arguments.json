@@ -3,9 +3,7 @@
   "output_dir": "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_c/vpp_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces:msg/Result.idl",
-    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces:srv/PredictRGB.idl",
-    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces:srv/PredictDepth.idl"
+    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces:msg/Result.idl"
   ],
   "ros_interface_dependencies": [
     "sensor_msgs:/opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl",
@@ -114,8 +112,6 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces/msg/Result.idl",
-    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces/srv/PredictRGB.idl",
-    "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_adapter/vpp_interfaces/srv/PredictDepth.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl",

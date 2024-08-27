@@ -13,7 +13,7 @@ module vpp_interfaces {
 
       @verbatim (language="comment", text=
         "Bounding boxes in pixels")
-      sensor_msgs::msg::RegionOfInterest boxes;
+      sequence<sensor_msgs::msg::RegionOfInterest> boxes;
 
       @verbatim (language="comment", text=
         "Integer class IDs for each bounding box")

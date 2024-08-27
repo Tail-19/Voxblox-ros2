@@ -67,12 +67,6 @@ include CMakeFiles/vpp_interfaces.dir/compiler_depend.make
 include CMakeFiles/vpp_interfaces.dir/progress.make
 
 CMakeFiles/vpp_interfaces: /home/alpha/Research/voxblox/src/vpp_interfaces/msg/Result.msg
-CMakeFiles/vpp_interfaces: /home/alpha/Research/voxblox/src/vpp_interfaces/srv/PredictRGB.srv
-CMakeFiles/vpp_interfaces: rosidl_cmake/srv/PredictRGB_Request.msg
-CMakeFiles/vpp_interfaces: rosidl_cmake/srv/PredictRGB_Response.msg
-CMakeFiles/vpp_interfaces: /home/alpha/Research/voxblox/src/vpp_interfaces/srv/PredictDepth.srv
-CMakeFiles/vpp_interfaces: rosidl_cmake/srv/PredictDepth_Request.msg
-CMakeFiles/vpp_interfaces: rosidl_cmake/srv/PredictDepth_Response.msg
 CMakeFiles/vpp_interfaces: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 CMakeFiles/vpp_interfaces: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 CMakeFiles/vpp_interfaces: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl

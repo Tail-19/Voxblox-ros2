@@ -83,7 +83,7 @@ class Result(metaclass=Metaclass_Result):
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'boxes': 'sensor_msgs/RegionOfInterest',
+        'boxes': 'sequence<sensor_msgs/RegionOfInterest>',
         'class_ids': 'sequence<int64>',
         'class_names': 'sequence<string>',
         'scores': 'sequence<float>',
@@ -92,7 +92,7 @@ class Result(metaclass=Metaclass_Result):
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['sensor_msgs', 'msg'], 'RegionOfInterest'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['sensor_msgs', 'msg'], 'RegionOfInterest')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int64')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
@@ -105,8 +105,7 @@ class Result(metaclass=Metaclass_Result):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
-        from sensor_msgs.msg import RegionOfInterest
-        self.boxes = kwargs.get('boxes', RegionOfInterest())
+        self.boxes = kwargs.get('boxes', [])
         self.class_ids = array.array('q', kwargs.get('class_ids', []))
         self.class_names = kwargs.get('class_names', [])
         self.scores = array.array('f', kwargs.get('scores', []))
@@ -183,9 +182,19 @@ class Result(metaclass=Metaclass_Result):
     def boxes(self, value):
         if __debug__:
             from sensor_msgs.msg import RegionOfInterest
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, RegionOfInterest), \
-                "The 'boxes' field must be a sub message of type 'RegionOfInterest'"
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, RegionOfInterest) for v in value) and
+                 True), \
+                "The 'boxes' field must be a set or sequence and each value of type 'RegionOfInterest'"
         self._boxes = value
 
     @builtins.property

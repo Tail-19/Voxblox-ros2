@@ -35,7 +35,7 @@ typedef struct vpp_interfaces__msg__Result
 {
   std_msgs__msg__Header header;
   /// Bounding boxes in pixels
-  sensor_msgs__msg__RegionOfInterest boxes;
+  sensor_msgs__msg__RegionOfInterest__Sequence boxes;
   /// Integer class IDs for each bounding box
   rosidl_runtime_c__int64__Sequence class_ids;
   /// String class IDs for each bouding box

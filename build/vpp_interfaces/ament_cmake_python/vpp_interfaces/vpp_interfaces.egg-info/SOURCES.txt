@@ -6,6 +6,3 @@ vpp_interfaces.egg-info/dependency_links.txt
 vpp_interfaces.egg-info/top_level.txt
 vpp_interfaces/msg/__init__.py
 vpp_interfaces/msg/_result.py
-vpp_interfaces/srv/__init__.py
-vpp_interfaces/srv/_predict_depth.py
-vpp_interfaces/srv/_predict_rgb.py
