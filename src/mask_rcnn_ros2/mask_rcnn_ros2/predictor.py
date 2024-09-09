@@ -5,13 +5,74 @@ import multiprocessing as mp
 from collections import deque
 import cv2
 import torch
+print(torch.cuda.is_available())
+print(torch.__version__)
+import onnx
+import io
+import numpy as np
+
+import tensorrt as trt
+import pycuda.driver as cuda
+import pycuda.autoinit
 
 from detectron2.data import MetadataCatalog
 from detectron2.engine.defaults import DefaultPredictor
 from detectron2.utils.video_visualizer import VideoVisualizer
 from detectron2.utils.visualizer import ColorMode, Visualizer
 
+import time
+import os
 
+torch.backends.cudnn.benchmark = True
+# torch.multiprocessing.set_start_method('spawn')# good solution !!!!
+
+ONNX_FILE_PATH = "~/Research/voxblox/onnx/maskrcnn.onnx"
+TRT_LOGGER = trt.Logger(trt.Logger.WARNING)
+
+# def default_predictor_to_onnx(predictor):
+#     sample_input = np.random.rand(3, 800, 800).astype(np.float32)
+#     onnx_file_path = export_onnx_model(ONNX_FILE_PATH)
+#     engine = build_engine(onnx_file_path)
+#     return engine
+
+# def export_onnx_model(self, predictor, onnx_file_path = 'None'):
+#     if os.path.exists(onnx_file_path):
+#         print(f"ONNX 模型已存在于 {onnx_file_path}")
+#         return onnx_file_path
+#     size = [512, 928, 3] # Inference image size [H, W, C]
+#     sample_input = np.random.rand(size).astype(np.float32)
+#     model = predictor.model
+#     model.eval()
+#     # 导出模型
+#     torch.onnx.export(
+#         model,
+#         sample_input,
+#         onnx_file_path,
+#         export_params=True,
+#         opset_version=11,  # 确保 opset 版本兼容
+#         do_constant_folding=True,
+#         input_names=["input"],
+#         output_names=["output"],
+#         dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}}
+#     )
+#     print(f"ONNX 模型已导出到 {onnx_file_path}")
+#     return onnx_file_path
+    
+# def build_engine(self, onnx_file_path):
+#     """构建 TensorRT 引擎"""
+#     with trt.Builder(TRT_LOGGER) as builder, builder.create_network(1) as network, trt.OnnxParser(network, TRT_LOGGER) as parser:
+#         builder.max_workspace_size = 2 << 30  
+#         builder.max_batch_size = 1 
+
+#         # 读取 ONNX 模型文件
+#         with open(onnx_file_path, 'rb') as model:
+#             parser.parse(model.read())
+
+#         # 构建 TensorRT 引擎
+#         engine = builder.build_cuda_engine(network)
+#         return engine
+
+# MASKRCNN
 class VisualizationDemo:
     def __init__(self, cfg, instance_mode=ColorMode.IMAGE, parallel=True):
         """
@@ -33,8 +94,6 @@ class VisualizationDemo:
             self.predictor = AsyncPredictor(cfg, num_gpus=num_gpu)
         else:
             self.predictor = DefaultPredictor(cfg)
-            
-        print(num_gpu)
 
     def run_on_image(self, image):
         """
@@ -47,7 +106,10 @@ class VisualizationDemo:
             vis_output (VisImage): the visualized image output.
         """
         vis_output = None
+        start = time.time()
         predictions = self.predictor(image)
+        print("single image inference time: ", time.time() - start)
+        
         # Convert image from OpenCV BGR format to Matplotlib RGB format.
         image = image[:, :, ::-1]
         visualizer = Visualizer(image, self.metadata, instance_mode=self.instance_mode)
@@ -65,7 +127,7 @@ class VisualizationDemo:
                 instances = predictions["instances"].to(self.cpu_device)
                 vis_output = visualizer.draw_instance_predictions(predictions=instances)
 
-        return predictions, vis_output
+        return predictions, vis_output.get_image()
 
 
 class AsyncPredictor:
@@ -86,8 +148,10 @@ class AsyncPredictor:
             super().__init__()
 
         def run(self):
+            print("Device: ", self.cfg.MODEL.DEVICE)
             predictor = DefaultPredictor(self.cfg)
-
+            print("ONNX Default Predictor Built")
+            
             while True:
                 task = self.task_queue.get()
                 if isinstance(task, AsyncPredictor._StopToken):
@@ -103,13 +167,15 @@ class AsyncPredictor:
             num_gpus (int): if 0, will run on CPU
         """
         num_workers = max(num_gpus, 1)
-        self.task_queue = mp.Queue(maxsize=num_workers * 3)
-        self.result_queue = mp.Queue(maxsize=num_workers * 3)
+        print("Number of workers: ", num_workers)
+        self.task_queue = mp.Queue(maxsize=num_workers * 12) # changed from 3 to 6
+        self.result_queue = mp.Queue(maxsize=num_workers * 12)
         self.procs = []
         for gpuid in range(max(num_gpus, 1)):
             cfg = cfg.clone()
             cfg.defrost()
             cfg.MODEL.DEVICE = "cuda:{}".format(gpuid) if num_gpus > 0 else "cpu"
+            print("Device: ", cfg.MODEL.DEVICE)
             self.procs.append(
                 AsyncPredictor._PredictWorker(cfg, self.task_queue, self.result_queue)
             )
@@ -157,3 +223,7 @@ class AsyncPredictor:
     @property
     def default_buffer_size(self):
         return len(self.procs) * 5
+    
+    
+
+            

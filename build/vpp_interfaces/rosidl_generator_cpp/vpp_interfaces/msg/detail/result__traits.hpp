@@ -40,24 +40,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: boxes
-  {
-    if (msg.boxes.size() == 0) {
-      out << "boxes: []";
-    } else {
-      out << "boxes: [";
-      size_t pending_items = msg.boxes.size();
-      for (auto item : msg.boxes) {
-        to_flow_style_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
   // member: class_ids
   {
     if (msg.class_ids.size() == 0) {
@@ -112,6 +94,24 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: boxes
+  {
+    if (msg.boxes.size() == 0) {
+      out << "boxes: []";
+    } else {
+      out << "boxes: [";
+      size_t pending_items = msg.boxes.size();
+      for (auto item : msg.boxes) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
   // member: masks
   {
     if (msg.masks.size() == 0) {
@@ -142,25 +142,6 @@ inline void to_block_style_yaml(
     }
     out << "header:\n";
     to_block_style_yaml(msg.header, out, indentation + 2);
-  }
-
-  // member: boxes
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.boxes.size() == 0) {
-      out << "boxes: []\n";
-    } else {
-      out << "boxes:\n";
-      for (auto item : msg.boxes) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "-\n";
-        to_block_style_yaml(item, out, indentation + 2);
-      }
-    }
   }
 
   // member: class_ids
@@ -219,6 +200,25 @@ inline void to_block_style_yaml(
         out << "- ";
         rosidl_generator_traits::value_to_yaml(item, out);
         out << "\n";
+      }
+    }
+  }
+
+  // member: boxes
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.boxes.size() == 0) {
+      out << "boxes: []\n";
+    } else {
+      out << "boxes:\n";
+      for (auto item : msg.boxes) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
       }
     }
   }

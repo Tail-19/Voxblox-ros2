@@ -5,5 +5,4 @@ Summary: TODO: Package description
 Maintainer: alpha
 Maintainer-email: alpha@todo.todo
 License: Apache-2.0
-License-File: LICENSE
 Requires-Dist: setuptools

@@ -74,28 +74,28 @@ class Result(metaclass=Metaclass_Result):
 
     __slots__ = [
         '_header',
-        '_boxes',
         '_class_ids',
         '_class_names',
         '_scores',
+        '_boxes',
         '_masks',
     ]
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'boxes': 'sequence<sensor_msgs/RegionOfInterest>',
         'class_ids': 'sequence<int64>',
         'class_names': 'sequence<string>',
         'scores': 'sequence<float>',
+        'boxes': 'sequence<sensor_msgs/RegionOfInterest>',
         'masks': 'sequence<sensor_msgs/Image>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['sensor_msgs', 'msg'], 'RegionOfInterest')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int64')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['sensor_msgs', 'msg'], 'RegionOfInterest')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['sensor_msgs', 'msg'], 'Image')),  # noqa: E501
     )
 
@@ -105,10 +105,10 @@ class Result(metaclass=Metaclass_Result):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
-        self.boxes = kwargs.get('boxes', [])
         self.class_ids = array.array('q', kwargs.get('class_ids', []))
         self.class_names = kwargs.get('class_names', [])
         self.scores = array.array('f', kwargs.get('scores', []))
+        self.boxes = kwargs.get('boxes', [])
         self.masks = kwargs.get('masks', [])
 
     def __repr__(self):
@@ -142,13 +142,13 @@ class Result(metaclass=Metaclass_Result):
             return False
         if self.header != other.header:
             return False
-        if self.boxes != other.boxes:
-            return False
         if self.class_ids != other.class_ids:
             return False
         if self.class_names != other.class_names:
             return False
         if self.scores != other.scores:
+            return False
+        if self.boxes != other.boxes:
             return False
         if self.masks != other.masks:
             return False
@@ -172,30 +172,6 @@ class Result(metaclass=Metaclass_Result):
                 isinstance(value, Header), \
                 "The 'header' field must be a sub message of type 'Header'"
         self._header = value
-
-    @builtins.property
-    def boxes(self):
-        """Message field 'boxes'."""
-        return self._boxes
-
-    @boxes.setter
-    def boxes(self, value):
-        if __debug__:
-            from sensor_msgs.msg import RegionOfInterest
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
-            assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, RegionOfInterest) for v in value) and
-                 True), \
-                "The 'boxes' field must be a set or sequence and each value of type 'RegionOfInterest'"
-        self._boxes = value
 
     @builtins.property
     def class_ids(self):
@@ -275,6 +251,30 @@ class Result(metaclass=Metaclass_Result):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'scores' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._scores = array.array('f', value)
+
+    @builtins.property
+    def boxes(self):
+        """Message field 'boxes'."""
+        return self._boxes
+
+    @boxes.setter
+    def boxes(self, value):
+        if __debug__:
+            from sensor_msgs.msg import RegionOfInterest
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, RegionOfInterest) for v in value) and
+                 True), \
+                "The 'boxes' field must be a set or sequence and each value of type 'RegionOfInterest'"
+        self._boxes = value
 
     @builtins.property
     def masks(self):

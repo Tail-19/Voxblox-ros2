@@ -1,3 +1,1 @@
-# generated from ament_package/template/environment_hook/pythonpath.sh.in
-
-ament_prepend_unique_value PYTHONPATH "$AMENT_CURRENT_PREFIX/lib/python3.10/site-packages"
+/home/alpha/Research/voxblox/build/vpp_interfaces/ament_cmake_environment_hooks/pythonpath.sh

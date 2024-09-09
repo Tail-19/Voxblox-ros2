@@ -37,16 +37,32 @@ private:
   ::vpp_interfaces::msg::Result msg_;
 };
 
+class Init_Result_boxes
+{
+public:
+  explicit Init_Result_boxes(::vpp_interfaces::msg::Result & msg)
+  : msg_(msg)
+  {}
+  Init_Result_masks boxes(::vpp_interfaces::msg::Result::_boxes_type arg)
+  {
+    msg_.boxes = std::move(arg);
+    return Init_Result_masks(msg_);
+  }
+
+private:
+  ::vpp_interfaces::msg::Result msg_;
+};
+
 class Init_Result_scores
 {
 public:
   explicit Init_Result_scores(::vpp_interfaces::msg::Result & msg)
   : msg_(msg)
   {}
-  Init_Result_masks scores(::vpp_interfaces::msg::Result::_scores_type arg)
+  Init_Result_boxes scores(::vpp_interfaces::msg::Result::_scores_type arg)
   {
     msg_.scores = std::move(arg);
-    return Init_Result_masks(msg_);
+    return Init_Result_boxes(msg_);
   }
 
 private:
@@ -85,32 +101,16 @@ private:
   ::vpp_interfaces::msg::Result msg_;
 };
 
-class Init_Result_boxes
-{
-public:
-  explicit Init_Result_boxes(::vpp_interfaces::msg::Result & msg)
-  : msg_(msg)
-  {}
-  Init_Result_class_ids boxes(::vpp_interfaces::msg::Result::_boxes_type arg)
-  {
-    msg_.boxes = std::move(arg);
-    return Init_Result_class_ids(msg_);
-  }
-
-private:
-  ::vpp_interfaces::msg::Result msg_;
-};
-
 class Init_Result_header
 {
 public:
   Init_Result_header()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Result_boxes header(::vpp_interfaces::msg::Result::_header_type arg)
+  Init_Result_class_ids header(::vpp_interfaces::msg::Result::_header_type arg)
   {
     msg_.header = std::move(arg);
-    return Init_Result_boxes(msg_);
+    return Init_Result_class_ids(msg_);
   }
 
 private:

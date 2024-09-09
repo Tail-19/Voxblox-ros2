@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "mask_rcnn = mask_rcnn_ros2.mask_rcnn_ros2_node:main",
-            "predictor = mask_rcnn_ros2.predictor",
+            # "predictor = mask_rcnn_ros2.predictor",
         ],
     },
 )

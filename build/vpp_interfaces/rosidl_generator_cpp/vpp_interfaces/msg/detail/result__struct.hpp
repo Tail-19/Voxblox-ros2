@@ -57,9 +57,6 @@ struct Result_
   using _header_type =
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
-  using _boxes_type =
-    std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>>;
-  _boxes_type boxes;
   using _class_ids_type =
     std::vector<int64_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<int64_t>>;
   _class_ids_type class_ids;
@@ -69,6 +66,9 @@ struct Result_
   using _scores_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _scores_type scores;
+  using _boxes_type =
+    std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>>;
+  _boxes_type boxes;
   using _masks_type =
     std::vector<sensor_msgs::msg::Image_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::Image_<ContainerAllocator>>>;
   _masks_type masks;
@@ -78,12 +78,6 @@ struct Result_
     const std_msgs::msg::Header_<ContainerAllocator> & _arg)
   {
     this->header = _arg;
-    return *this;
-  }
-  Type & set__boxes(
-    const std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>> & _arg)
-  {
-    this->boxes = _arg;
     return *this;
   }
   Type & set__class_ids(
@@ -102,6 +96,12 @@ struct Result_
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->scores = _arg;
+    return *this;
+  }
+  Type & set__boxes(
+    const std::vector<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<sensor_msgs::msg::RegionOfInterest_<ContainerAllocator>>> & _arg)
+  {
+    this->boxes = _arg;
     return *this;
   }
   Type & set__masks(
@@ -156,9 +156,6 @@ struct Result_
     if (this->header != other.header) {
       return false;
     }
-    if (this->boxes != other.boxes) {
-      return false;
-    }
     if (this->class_ids != other.class_ids) {
       return false;
     }
@@ -166,6 +163,9 @@ struct Result_
       return false;
     }
     if (this->scores != other.scores) {
+      return false;
+    }
+    if (this->boxes != other.boxes) {
       return false;
     }
     if (this->masks != other.masks) {

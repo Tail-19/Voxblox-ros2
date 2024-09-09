@@ -108,16 +108,6 @@ cdr_serialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.header,
     cdr);
-  // Member: boxes
-  {
-    size_t size = ros_message.boxes.size();
-    cdr << static_cast<uint32_t>(size);
-    for (size_t i = 0; i < size; i++) {
-      sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-        ros_message.boxes[i],
-        cdr);
-    }
-  }
   // Member: class_ids
   {
     cdr << ros_message.class_ids;
@@ -129,6 +119,16 @@ cdr_serialize(
   // Member: scores
   {
     cdr << ros_message.scores;
+  }
+  // Member: boxes
+  {
+    size_t size = ros_message.boxes.size();
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.boxes[i],
+        cdr);
+    }
   }
   // Member: masks
   {
@@ -153,18 +153,6 @@ cdr_deserialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.header);
 
-  // Member: boxes
-  {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    ros_message.boxes.resize(size);
-    for (size_t i = 0; i < size; i++) {
-      sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-        cdr, ros_message.boxes[i]);
-    }
-  }
-
   // Member: class_ids
   {
     cdr >> ros_message.class_ids;
@@ -178,6 +166,18 @@ cdr_deserialize(
   // Member: scores
   {
     cdr >> ros_message.scores;
+  }
+
+  // Member: boxes
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.boxes.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.boxes[i]);
+    }
   }
 
   // Member: masks
@@ -213,19 +213,6 @@ get_serialized_size(
   current_alignment +=
     std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.header, current_alignment);
-  // Member: boxes
-  {
-    size_t array_size = ros_message.boxes.size();
-
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment +=
-        sensor_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-        ros_message.boxes[index], current_alignment);
-    }
-  }
   // Member: class_ids
   {
     size_t array_size = ros_message.class_ids.size();
@@ -257,6 +244,19 @@ get_serialized_size(
     size_t item_size = sizeof(ros_message.scores[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: boxes
+  {
+    size_t array_size = ros_message.boxes.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        sensor_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.boxes[index], current_alignment);
+    }
   }
   // Member: masks
   {
@@ -314,29 +314,6 @@ max_serialized_size_Result(
     }
   }
 
-  // Member: boxes
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        sensor_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_RegionOfInterest(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
   // Member: class_ids
   {
     size_t array_size = 0;
@@ -378,6 +355,29 @@ max_serialized_size_Result(
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: boxes
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        sensor_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_RegionOfInterest(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   // Member: masks

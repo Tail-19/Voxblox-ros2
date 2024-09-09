@@ -20,13 +20,13 @@ extern "C"
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.h"
-// Member 'boxes'
-#include "sensor_msgs/msg/detail/region_of_interest__struct.h"
 // Member 'class_ids'
 // Member 'scores'
 #include "rosidl_runtime_c/primitives_sequence.h"
 // Member 'class_names'
 #include "rosidl_runtime_c/string.h"
+// Member 'boxes'
+#include "sensor_msgs/msg/detail/region_of_interest__struct.h"
 // Member 'masks'
 #include "sensor_msgs/msg/detail/image__struct.h"
 
@@ -34,14 +34,14 @@ extern "C"
 typedef struct vpp_interfaces__msg__Result
 {
   std_msgs__msg__Header header;
-  /// Bounding boxes in pixels
-  sensor_msgs__msg__RegionOfInterest__Sequence boxes;
   /// Integer class IDs for each bounding box
   rosidl_runtime_c__int64__Sequence class_ids;
   /// String class IDs for each bouding box
   rosidl_runtime_c__String__Sequence class_names;
   /// Float probability scores of the class_id
   rosidl_runtime_c__float__Sequence scores;
+  /// Bounding boxes in pixels
+  sensor_msgs__msg__RegionOfInterest__Sequence boxes;
   /// Instance masks as Image
   sensor_msgs__msg__Image__Sequence masks;
 } vpp_interfaces__msg__Result;

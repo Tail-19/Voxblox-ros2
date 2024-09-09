@@ -1,4 +1,1 @@
-source;share/vpp_interfaces/environment/ament_prefix_path.sh
-source;share/vpp_interfaces/environment/library_path.sh
-source;share/vpp_interfaces/environment/path.sh
-source;share/vpp_interfaces/environment/pythonpath.sh
+/home/alpha/Research/voxblox/build/vpp_interfaces/ament_cmake_environment_hooks/local_setup.dsv

@@ -17,15 +17,15 @@
 #include "std_msgs/msg/header.h"
 // Member `header`
 #include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
-// Member `boxes`
-#include "sensor_msgs/msg/region_of_interest.h"
-// Member `boxes`
-#include "sensor_msgs/msg/detail/region_of_interest__rosidl_typesupport_introspection_c.h"
 // Member `class_ids`
 // Member `scores`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 // Member `class_names`
 #include "rosidl_runtime_c/string_functions.h"
+// Member `boxes`
+#include "sensor_msgs/msg/region_of_interest.h"
+// Member `boxes`
+#include "sensor_msgs/msg/detail/region_of_interest__rosidl_typesupport_introspection_c.h"
 // Member `masks`
 #include "sensor_msgs/msg/image.h"
 // Member `masks`
@@ -48,61 +48,6 @@ void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_ini
 void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_fini_function(void * message_memory)
 {
   vpp_interfaces__msg__Result__fini(message_memory);
-}
-
-size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes(
-  const void * untyped_member)
-{
-  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
-    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
-  return member->size;
-}
-
-const void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(
-  const void * untyped_member, size_t index)
-{
-  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
-    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(
-  void * untyped_member, size_t index)
-{
-  sensor_msgs__msg__RegionOfInterest__Sequence * member =
-    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const sensor_msgs__msg__RegionOfInterest * item =
-    ((const sensor_msgs__msg__RegionOfInterest *)
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(untyped_member, index));
-  sensor_msgs__msg__RegionOfInterest * value =
-    (sensor_msgs__msg__RegionOfInterest *)(untyped_value);
-  *value = *item;
-}
-
-void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  sensor_msgs__msg__RegionOfInterest * item =
-    ((sensor_msgs__msg__RegionOfInterest *)
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(untyped_member, index));
-  const sensor_msgs__msg__RegionOfInterest * value =
-    (const sensor_msgs__msg__RegionOfInterest *)(untyped_value);
-  *item = *value;
-}
-
-bool vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes(
-  void * untyped_member, size_t size)
-{
-  sensor_msgs__msg__RegionOfInterest__Sequence * member =
-    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
-  sensor_msgs__msg__RegionOfInterest__Sequence__fini(member);
-  return sensor_msgs__msg__RegionOfInterest__Sequence__init(member, size);
 }
 
 size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__class_ids(
@@ -270,6 +215,61 @@ bool vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_fun
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
+size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes(
+  const void * untyped_member)
+{
+  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(
+  const void * untyped_member, size_t index)
+{
+  const sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (const sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(
+  void * untyped_member, size_t index)
+{
+  sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const sensor_msgs__msg__RegionOfInterest * item =
+    ((const sensor_msgs__msg__RegionOfInterest *)
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes(untyped_member, index));
+  sensor_msgs__msg__RegionOfInterest * value =
+    (sensor_msgs__msg__RegionOfInterest *)(untyped_value);
+  *value = *item;
+}
+
+void vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  sensor_msgs__msg__RegionOfInterest * item =
+    ((sensor_msgs__msg__RegionOfInterest *)
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes(untyped_member, index));
+  const sensor_msgs__msg__RegionOfInterest * value =
+    (const sensor_msgs__msg__RegionOfInterest *)(untyped_value);
+  *item = *value;
+}
+
+bool vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes(
+  void * untyped_member, size_t size)
+{
+  sensor_msgs__msg__RegionOfInterest__Sequence * member =
+    (sensor_msgs__msg__RegionOfInterest__Sequence *)(untyped_member);
+  sensor_msgs__msg__RegionOfInterest__Sequence__fini(member);
+  return sensor_msgs__msg__RegionOfInterest__Sequence__init(member, size);
+}
+
 size_t vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__masks(
   const void * untyped_member)
 {
@@ -344,23 +344,6 @@ static rosidl_typesupport_introspection_c__MessageMember vpp_interfaces__msg__Re
     NULL  // resize(index) function pointer
   },
   {
-    "boxes",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(vpp_interfaces__msg__Result, boxes),  // bytes offset in struct
-    NULL,  // default value
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes,  // size() function pointer
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes,  // get_const(index) function pointer
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes,  // get(index) function pointer
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes,  // fetch(index, &value) function pointer
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes,  // assign(index, value) function pointer
-    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes  // resize(index) function pointer
-  },
-  {
     "class_ids",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
@@ -412,6 +395,23 @@ static rosidl_typesupport_introspection_c__MessageMember vpp_interfaces__msg__Re
     vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__scores  // resize(index) function pointer
   },
   {
+    "boxes",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vpp_interfaces__msg__Result, boxes),  // bytes offset in struct
+    NULL,  // default value
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__size_function__Result__boxes,  // size() function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_const_function__Result__boxes,  // get_const(index) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__get_function__Result__boxes,  // get(index) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__fetch_function__Result__boxes,  // fetch(index, &value) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__assign_function__Result__boxes,  // assign(index, value) function pointer
+    vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__resize_function__Result__boxes  // resize(index) function pointer
+  },
+  {
     "masks",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
@@ -453,7 +453,7 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, vpp_interfaces, msg, Result)() {
   vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
-  vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_message_member_array[1].members_ =
+  vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_message_member_array[4].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_msgs, msg, RegionOfInterest)();
   vpp_interfaces__msg__Result__rosidl_typesupport_introspection_c__Result_message_member_array[5].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_msgs, msg, Image)();

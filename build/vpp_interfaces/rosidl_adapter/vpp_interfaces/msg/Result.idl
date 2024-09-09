@@ -12,10 +12,6 @@ module vpp_interfaces {
       std_msgs::msg::Header header;
 
       @verbatim (language="comment", text=
-        "Bounding boxes in pixels")
-      sequence<sensor_msgs::msg::RegionOfInterest> boxes;
-
-      @verbatim (language="comment", text=
         "Integer class IDs for each bounding box")
       sequence<int64> class_ids;
 
@@ -26,6 +22,10 @@ module vpp_interfaces {
       @verbatim (language="comment", text=
         "Float probability scores of the class_id")
       sequence<float> scores;
+
+      @verbatim (language="comment", text=
+        "Bounding boxes in pixels")
+      sequence<sensor_msgs::msg::RegionOfInterest> boxes;
 
       @verbatim (language="comment", text=
         "Instance masks as Image")
