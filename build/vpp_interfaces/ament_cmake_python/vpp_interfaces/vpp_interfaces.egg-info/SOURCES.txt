@@ -4,3 +4,5 @@ vpp_interfaces.egg-info/PKG-INFO
 vpp_interfaces.egg-info/SOURCES.txt
 vpp_interfaces.egg-info/dependency_links.txt
 vpp_interfaces.egg-info/top_level.txt
+vpp_interfaces/msg/__init__.py
+vpp_interfaces/msg/_result.py

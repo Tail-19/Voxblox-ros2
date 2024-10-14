@@ -1,2 +1,3 @@
 [console_scripts]
 mask_rcnn = mask_rcnn_ros2.mask_rcnn_ros2_node:main
+

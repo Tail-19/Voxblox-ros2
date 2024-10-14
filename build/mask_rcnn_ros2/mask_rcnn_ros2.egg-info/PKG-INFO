@@ -1,8 +1,13 @@
 Metadata-Version: 2.1
-Name: mask_rcnn_ros2
+Name: mask-rcnn-ros2
 Version: 0.0.0
 Summary: TODO: Package description
+Home-page: UNKNOWN
 Maintainer: alpha
 Maintainer-email: alpha@todo.todo
 License: Apache-2.0
-Requires-Dist: setuptools
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

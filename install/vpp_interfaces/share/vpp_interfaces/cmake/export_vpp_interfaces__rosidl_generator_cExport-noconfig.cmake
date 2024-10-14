@@ -12,8 +12,8 @@ set_target_properties(vpp_interfaces::vpp_interfaces__rosidl_generator_c PROPERT
   IMPORTED_SONAME_NOCONFIG "libvpp_interfaces__rosidl_generator_c.so"
   )
 
-list(APPEND _cmake_import_check_targets vpp_interfaces::vpp_interfaces__rosidl_generator_c )
-list(APPEND _cmake_import_check_files_for_vpp_interfaces::vpp_interfaces__rosidl_generator_c "${_IMPORT_PREFIX}/lib/libvpp_interfaces__rosidl_generator_c.so" )
+list(APPEND _IMPORT_CHECK_TARGETS vpp_interfaces::vpp_interfaces__rosidl_generator_c )
+list(APPEND _IMPORT_CHECK_FILES_FOR_vpp_interfaces::vpp_interfaces__rosidl_generator_c "${_IMPORT_PREFIX}/lib/libvpp_interfaces__rosidl_generator_c.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

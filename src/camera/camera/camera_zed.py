@@ -25,7 +25,7 @@ class CameraZed(Node):
         self._publisher_rgb_image = self.create_publisher(Image, 'rgb_image', qos_profile)
         self._publisher_rgb_camera_info = self.create_publisher(CameraInfo, 'rgb_camera_info', qos_profile)
         self._publisher_depth_image = self.create_publisher(Image, 'depth_image', qos_profile)
-        # self._publisher_depth_camera_info = self.create_publisher(CameraInfo, 'depth_camera_info', 10)
+        self._publisher_depth_camera_info = self.create_publisher(CameraInfo, 'depth_camera_info', 10)
         
         self.init_camera()
         
@@ -56,6 +56,9 @@ class CameraZed(Node):
 
             rgb_image = self.mat_rgb.get_data()
             depth_image = self.mat_depth.get_data().astype(np.float32)
+            
+            rgb_image = cv2.resize(rgb_image, (640, 480))
+            depth_image = cv2.resize(depth_image, (640, 480))
 
             # Publish RGB image
             rgb_msg = self.bridge.cv2_to_imgmsg(rgb_image, encoding='bgra8')
@@ -98,6 +101,35 @@ class CameraZed(Node):
             ]))
             
             self._publisher_rgb_camera_info.publish(rgb_cam_info_msg)
+            
+            #publish depth camera info
+            depth_cam_info_msg = CameraInfo()
+            depth_cam_info_msg.header.stamp = self.get_clock().now().to_msg()
+            depth_cam_info_msg.width = depth_image.shape[1]
+            depth_cam_info_msg.height = depth_image.shape[0]
+            depth_cam_info_msg.distortion_model = 'plumb_bob'
+            depth_cam_info_msg.d = camera_info.right_cam.disto.tolist() 
+            
+            depth_cam_info_msg.k = list(map(float, [
+                camera_info.right_cam.fx, 0, camera_info.right_cam.cx,
+                0, camera_info.right_cam.fy, camera_info.right_cam.cy,
+                0, 0, 1
+            ]))
+            
+            depth_cam_info_msg.r = list(map(float, [
+                1, 0, 0,
+                0, 1, 0,
+                0, 0, 1
+            ]))
+
+            tx = camera_info.stereo_transform.get_translation().get()[0]
+            depth_cam_info_msg.p = list(map(float, [
+                camera_info.right_cam.fx, 0, camera_info.right_cam.cx, tx * camera_info.right_cam.fx,
+                0, camera_info.right_cam.fy, camera_info.right_cam.cy, 0,
+                0, 0, 1, 0
+            ]))
+
+            self._publisher_depth_camera_info.publish(depth_cam_info_msg)
             
             self.get_logger().info("Publishing ZED image frame, wait for image processing...")
 

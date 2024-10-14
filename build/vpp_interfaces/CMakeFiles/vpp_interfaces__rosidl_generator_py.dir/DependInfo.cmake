@@ -11,8 +11,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alpha/Research/voxblox/build/vpp_interfaces/rosidl_generator_py/vpp_interfaces/msg/_result_s.c" "CMakeFiles/vpp_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vpp_interfaces/msg/_result_s.c.o" "gcc" "CMakeFiles/vpp_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vpp_interfaces/msg/_result_s.c.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles/vpp_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/alpha/Research/voxblox/build/vpp_interfaces/CMakeFiles/vpp_interfaces__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
