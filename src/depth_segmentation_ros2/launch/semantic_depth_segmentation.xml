@@ -1,0 +1,14 @@
+<launch>
+  <arg name="sensor_name" default="primesense" />
+  <arg name="visualize" default="false" />
+
+  <node name="depth_segmentation_node" pkg="depth_segmentation_ros2" exec="depth_segmentation_ros2_node" output="screen">
+
+    <!-- <param from="$(find-pkg-share depth_segmentation_ros2)/cfg/$(var sensor_name)_topics.yaml"/> -->
+    <!-- <param from="$(find-pkg-share depth_segmentation_ros2)/cfg/$(var sensor_name)_config.yaml"/> -->
+
+    <param name="semantic_instance_segmentation/enable" value="true"/>
+    <param name="label_display" value="$(var visualize)"/>
+    
+  </node>
+</launch>
